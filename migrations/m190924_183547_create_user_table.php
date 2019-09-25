@@ -10,9 +10,9 @@ class m190924_183547_create_user_table extends Migration
     /**
      * {@inheritdoc}
      */
-    public function safeUp()
+    public function Up()
     {
-        $this->createTable('{{%user}}', [
+        $this->createTable('user', [
             'id' => $this->primaryKey(),
             'name' => $this->string(),
             'email' => $this->string()->notNull()->unique(),
@@ -24,8 +24,8 @@ class m190924_183547_create_user_table extends Migration
     /**
      * {@inheritdoc}
      */
-    public function safeDown()
+    public function down()
     {
-        $this->dropTable('{{%user}}');
+        $this->dropTable('user');
     }
 }

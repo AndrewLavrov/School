@@ -13,7 +13,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false
         ],
-        'request' => ['cookieValidationKey' => 'super secret code']
+        'request' => ['cookieValidationKey' => 'super secret code'],
+        'db' => require (__DIR__ . '/db.php')
     ],
     'modules' => [
         'debug' => [

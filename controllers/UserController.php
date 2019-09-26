@@ -8,9 +8,9 @@ class UserController extends Controller
 {
     public function actionJoin ()
     {
-        $userRecord = new UserRecord();
-        $userRecord->setTestUser();
-        $userRecord->save();
+        //$userRecord = new UserRecord();
+        //$userRecord->setTestUser();
+        //$userRecord->save();
 
         return $this->render('join');
     }
